@@ -52,7 +52,7 @@
 								<label style="padding-top:15px;">First Name: </label>
 							</div>
 							<div class="col-md-4">
-								<input class="form-control input-sm" style="padding:20px; margin-top:10px;" id="s2_car_owner_fname" name="s2_car_owner_fname" required/>
+								<input class="form-control input-sm s2Msc1"  id="s2_car_owner_fname" name="s2_car_owner_fname" required/>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
@@ -81,12 +81,12 @@
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
 								<label>Birthdate</label>
-								<input type="date" class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s2_car_owner_birthdate" name="s2_car_owner_birthdate" required/>
+								<input type="date" class="form-control input-sm text-center s2Misc1"  id="s2_car_owner_birthdate" name="s2_car_owner_birthdate" required/>
 							</div>
 							<div class="col-md-3">
 								<label>Complexion</label>
 							
-								<input type="text" class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s2_car_owner_complexion" name="s2_car_owner_complexion" required/>
+								<input type="text" class="form-control input-sm text-center s2Misc1"  id="s2_car_owner_complexion" name="s2_car_owner_complexion" required/>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
@@ -94,12 +94,12 @@
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
 								<label>Height</label>
-								<input type="text" class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s2_car_owner_height" name="s2_car_owner_height" required/>
+								<input type="text" class="form-control input-sm text-center s2Misc1" id="s2_car_owner_height" name="s2_car_owner_height" required/>
 							</div>
 							<div class="col-md-3">
 								<label>Built</label>
 							
-								<input type="text" class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s2_car_owner_built" name="s2_car_owner_built" required/>
+								<input type="text" class="form-control input-sm text-center s2Misc1"  id="s2_car_owner_built" name="s2_car_owner_built" required/>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
@@ -110,14 +110,14 @@
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
-							<div class="col-md-6"><input type="text" class="form-control input-sm" style="padding:20px; margin-top: 10px; margin-bottom: 20px;" id="dname_1" name="dname_1" required/></div>
+							<div class="col-md-6"><input type="text" class="form-control input-sm s2Misc1" id="dname_1" name="dname_1" required/></div>
 							<div class="col-md-3"></div>
 							
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-2"><label style="float:right;">Tel. No.: </label></div>
-							<div class="col-md-4"><input type="text" class="form-control input-sm" style="padding:20px; margin-top: 10px; margin-bottom: 20px;" id="dtel_1" name="dtel_1" required/></div>
+							<div class="col-md-4"><input type="text" class="form-control input-sm s2Misc1" id="dtel_1" name="dtel_1" required/></div>
 							<div class="col-md-3"></div>
 						</div>
 						<div class="row">
@@ -127,23 +127,23 @@
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
-							<div class="col-md-6"><input type="text" class="form-control input-sm" style="padding:20px; margin-top: 10px; margin-bottom: 20px;" id="dname_2" name="dname_2"/></div>
+							<div class="col-md-6"><input type="text" class="form-control input-sm s2Misc1"  id="dname_2" name="dname_2"/></div>
 							<div class="col-md-3"></div>
 							
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-2"><label style="float:right;">Tel. No.: </label></div>
-							<div class="col-md-4"><input type="text" class="form-control input-sm" style="padding:20px; margin-top: 10px; margin-bottom: 20px;" id="dtel_2" name="dtel_2"/></div>
+							<div class="col-md-4"><input type="text" class="form-control input-sm s2Misc1"  id="dtel_2" name="dtel_2"/></div>
 							<div class="col-md-3"></div>
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
-								<a href="application_s1.php"><button class="btn btn-default blackbg" style="padding-top: 20px; padding-bottom: 20px; margin-top:10px;">BACK</button></a>
+								<a href="application_s1.php"><button class="btn btn-default blackbg s2Misc1">BACK</button></a>
 							</div>
 							<div class="col-md-3">
-								<button class="btn btn-default blackbg" type="submit" form="application_form2" style="padding-top: 20px; padding-bottom: 20px; margin-top:10px;">SUBMIT</button>
+								<button class="btn btn-default blackbg misc1" type="submit" form="application_form2" style="padding-top: 20px; padding-bottom: 20px; margin-top:10px;">SUBMIT</button>
 							</div>
 							<div class="col-md-3"></div>
 						</div>

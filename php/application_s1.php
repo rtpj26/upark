@@ -59,38 +59,38 @@
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-6">
-								<input class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s1_car_owner" name="s1_car_owner" placeholder="REGISTERED OWNER" required/>
+								<input class="form-control input-sm text-center s1Misc1" id="s1_car_owner" name="s1_car_owner" placeholder="REGISTERED OWNER" required/>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
-								<input class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s1_owner_address" name="s1_owner_address" placeholder="ADDRESS CITY" required/>
+								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_address" name="s1_owner_address" placeholder="ADDRESS CITY" required/>
 							</div>
 							<div class="col-md-3">
-								<input class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s1_owner_tel1" name="s1_owner_tel1" placeholder="TEL NO." required/>
+								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_tel1" name="s1_owner_tel1" placeholder="TEL NO." required/>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
-								<input class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s1_owner_province" name="s1_owner_province" placeholder="PROVINCE" required/>
+								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_province" name="s1_owner_province" placeholder="PROVINCE" required/>
 							</div>
 							<div class="col-md-3">
-								<input class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s1_owner_tel2" name="s1_owner_tel2" placeholder="TEL NO." required/>
+								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_tel2" name="s1_owner_tel2" placeholder="TEL NO." required/>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
-						<strong style="font-size: 200%;margin-top:20px;">DESCRIPTION OF VEHICLE</strong>
+						<strong class="applicationLabel">DESCRIPTION OF VEHICLE</strong>
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
-								<input class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s1_car_make" name="s1_car_make" placeholder="MAKE" required/>
+								<input class="form-control input-sm text-center s1Misc1" id="s1_car_make" name="s1_car_make" placeholder="MAKE" required/>
 							</div>
 							<div class="col-md-3">
-								<input class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s1_car_model" name="s1_car_model" placeholder="MODEL" required/>
+								<input class="form-control input-sm text-center s1Misc1" id="s1_car_model" name="s1_car_model" placeholder="MODEL" required/>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
@@ -104,7 +104,7 @@
 							</div>
 							<div class="col-md-3"></div>
 						</div>
-						<strong style="font-size: 200%;margin-top:20px;">AUTHORIZED DRIVER OTHER THAN OWNER</strong>
+						<strong class="applicationLabel">AUTHORIZED DRIVER OTHER THAN OWNER</strong>
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
@@ -129,10 +129,10 @@
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
-								<a href="application_RN.php"><button class="btn btn-default blackbg" style="padding-top: 20px; padding-bottom: 20px; margin-top:10px;">BACK</button></a>
+								<a href="application_RN.php"><button class="btn btn-default blackbg applicationButton">BACK</button></a>
 							</div>
 							<div class="col-md-3">
-								<button class="btn btn-default blackbg" type="submit" form="application_form1" style="padding-top: 20px; padding-bottom: 20px; margin-top:10px;">SUBMIT</button>
+								<button class="btn btn-default blackbg applicationButton" type="submit" form="application_form1" >SUBMIT</button>
 							</div>
 							<div class="col-md-3"></div>
 						</div>

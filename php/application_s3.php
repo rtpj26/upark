@@ -85,9 +85,9 @@
 						<div class="row text-center">
 							<div class="col-md-3"></div>
 							<div class="col-md-6">
-								<input type="text" style="margin-bottom: 5px;" class="form-control input-sm" id="l1_content_3"name="l1_content" />
-								<input type="text" style="margin-bottom: 5px;" class="form-control input-sm" id="l1_content_3"name="l1_content" />
-								<input type="text" style="margin-bottom: 5px;" class="form-control input-sm" id="l1_content_3"name="l1_content" />
+								<input type="text" class="form-control input-sm" id="l1_content_3"name="l1_content" />
+								<input type="text" class="form-control input-sm" id="l1_content_3"name="l1_content" />
+								<input type="text" class="form-control input-sm" id="l1_content_3"name="l1_content" />
 							</div>
 							<div class="col-md-3"></div>
 						</div>
