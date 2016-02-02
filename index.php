@@ -26,7 +26,6 @@
 						<li class="active link"><a href="index.php">HOME</a></li>
 						<li class="link"><a href="php/about.php">ABOUT</a></li>
 						<li class="link"><a href="php/admin.php">ADMIN</a></li>
-						<li class="link"><a href="php/updates.php">UPDATES</a></li>
 						<li class="link"><a href="php/news.php">NEWS</a></li>
 						<li class="link"><a href="php/contact.php">CONTACT</a></li>
 						<li class="link dropdown"><a id="application_hover" href="#" class="dropdown-toggle navbar-custom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">APPLICATION<span class="caret"></span></a>
@@ -59,16 +58,7 @@
 				<li>
 					<div class="blackbg arrow_box_b" style="margin-top: -50px;">
 						<div class="row">
-							<div class="col-md-4" style="padding:20px;">
-								<p class="text-center"><span style="font-size: 175%;"><strong>RESERVED</strong></span><br>
-								<img src="img/reserved.png"/><br>
-								<span style="color: #77694c">Something here</span><br>
-								<span style="font-size: 75%;">Lorem ipsum dolor sit amet, consectetur 
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-								magna aliqua. Ut enim ad minim veniam</span><br>
-								<a href="#" style="color: #fff;">MORE</a></p>
-							</div>
-							<div class="col-md-4" style="padding:20px;">
+							<div class="col-md-6" style="padding:20px;">
 								<p class="text-center"><span style="font-size: 175%;"><strong>UNAVAILABLE</strong></span><br>
 								<img src="img/unavailable.png"/><br>
 								<span style="color: #77694c">Something here</span><br>
@@ -77,7 +67,7 @@
 								magna aliqua. Ut enim ad minim veniam</span><br>
 								<a href="#" style="color: #fff;">MORE</a></p>
 							</div>
-							<div class="col-md-4" style="padding:20px;">
+							<div class="col-md-6" style="padding:20px;">
 								<p class="text-center"><span style="font-size: 175%;"><strong>AVAILABLE</strong></span><br>
 								<img src="img/available.png"/><br>
 								<span style="color: #77694c">Something here</span><br>

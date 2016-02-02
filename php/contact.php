@@ -72,7 +72,6 @@
 						<li class="active link"><a href="../index.php">HOME</a></li>
 						<li class="link"><a href="about.php">ABOUT</a></li>
 						<li class="link"><a href="admin.php">ADMIN</a></li>
-						<li class="link"><a href="updates.php">UPDATES</a></li>
 						<li class="link"><a href="news.php">NEWS</a></li>
 						<li class="link"><a href="contact.php">CONTACT</a></li>
 						<li class="link dropdown"><a id="application_hover" href="#" class="dropdown-toggle navbar-custom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">APPLICATION<span class="caret"></span></a>
