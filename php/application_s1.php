@@ -54,6 +54,16 @@
 						<form role="form" method="post" action="protected/application_s1_proc.php" id="application_form1">
 						<div class="row">
 							<div class="col-md-3"></div>
+							<div class="col-md-3">
+								<input type="radio" id="s1_vehicle_type" name="l1_content_1" value="1" /> Car <br>
+							</div>
+							<div class="col-md-3">
+								<input type="radio" id="s1_vehicle_type" name="l1_content_1" value="2" /> Motor <br>
+							</div>
+							<div class="col-md-3"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3"></div>
 							<div class="col-md-6">
 								<input class="form-control input-sm text-center" style="padding:20px; margin-top:10px;" id="s1_car_owner" name="s1_car_owner" placeholder="REGISTERED OWNER" required/>
 							</div>

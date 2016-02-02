@@ -38,7 +38,7 @@
 			return $id;
 		}
 
-		public function addCar($regowner, $city, $telno, $province, $provTelno, $drName, $rel, $drAdd, $drTelno, $aid1, $uid1){
+		public function addUserDetails($regowner, $city, $telno, $province, $provTelno, $drName, $rel, $drAdd, $drTelno, $aid1, $uid1){
 			$pdo_1 = self::$pdo->prepare("INSERT INTO `tbl_user_details` VALUES(NULL, 3, :regowner, :city, :telno, :prov, :provtelno, :drName,
 				:rel, :drAdd, :drTelNo, :aid, :uid)");
 			$pdo_1->execute(array(':regowner' => $regowner, ':city' => $city, ':telno' => $telno, ':prov' => $province, ':provtelno' => $provTelno, 
@@ -47,7 +47,21 @@
 			return $id;
 		}
 
-		public function linkStatusApplicantCar($aid, $uid, $sid){
+		public function addVehicleDetails($make, $model, $plate, $color){
+			$pdo_1 = self::$pdo->prepare("INSERT INTO `tbl_applicant_vehicle` VALUES(NULL, :make, :model, :plate, :color");
+			$pdo_1->execute(array(':make' => $make, ':model' => $model, ':plate' => $plate, ':color' => $color));
+			$id = self::$pdo->lastInsertId('AC_ID');
+			return $id;
+		}	
+
+		public function linkStatusApplicantUD($aid, $vid){
+			$pdo_1 = self::$pdo->prepare("INSERT INTO `tbl_applicant_car_link` VALUES(NULL, :AID, :VID)");
+			$pdo_1->execute(array(':AID' => $aid, ':VID' => $vid));
+			$id = self::$pdo->lastInsertId('ACL_ID');
+			return $id;
+		}
+			
+		public function linkStatusApplicantUD($aid, $uid, $sid){
 			$pdo_1 = self::$pdo->prepare("INSERT INTO `tbl_applicant_details_status_link` VALUES(NULL, :AID, :UID, :SID, 3)");
 			$pdo_1->execute(array(':AID' => $aid, ':UID' => $uid, ':SID' => $sid));
 			$id = self::$pdo->lastInsertId('ADS_ID');
@@ -62,5 +76,7 @@
 			if($result)	echo json_encode($result);
 			else return 0;
 		}
+
+
 	}
 ?>
