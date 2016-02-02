@@ -27,7 +27,7 @@
 						<li class="link"><a href="admin.php">ADMIN</a></li>
 						<li class="link"><a href="news.php">NEWS</a></li>
 						<li class="link"><a href="contact.php">CONTACT</a></li>
-						<li class="link"><a href="forms.php">FORMS</a></li>
+						<li class="link"><a href="application_RN.php">APPLICATION</a></li>
 					</ul>
 				</div>
 			</div>

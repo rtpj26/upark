@@ -27,12 +27,7 @@
 						<li class="link"><a href="admin.php">ADMIN</a></li>
 						<li class="link"><a href="news.php">NEWS</a></li>
 						<li class="link"><a href="contact.php">CONTACT</a></li>
-						<li class="link dropdown"><a id="application_hover" href="#" class="dropdown-toggle navbar-custom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">APPLICATION<span class="caret"></span></a>
-							<ul class="dropdown-menu" style="font-size: 80%; color: #009e3d;">
-								<li class="subnavmenu"><a href="application_RN.php"> MOTOR APPLICATION </a></li>
-								<li class="subnavmenu"><a href="application_RN.php"> CAR APPLICATION </a></li>
-							</ul>
-						</li>
+						<li class="link"><a href="application_RN.php">APPLICATION</a></li>
 						<li class="center_vertical" style="font-size: 75%; float: right; color: white;">
 							<div>
 								Already a user? <a href="enter_sticker.php" style="color: #009e3d">Sign in</a> here
