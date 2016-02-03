@@ -28,6 +28,7 @@
 					<ul class="nav navbar-nav">
 						<li class="link"><a href="content_control_dashboard.php"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
 						<li class="link"><a href="content_control_approval.php" ><span class="glyphicon glyphicon-ok"></span> Approve Users</a></li>
+						<li class="link"><a href="content_control_users.php" ><span class="glyphicon glyphicon-user"></span> Users</a></li>
 						<li class="link"><a href="../content_control_login.php" ><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 					</ul>
 				</div>

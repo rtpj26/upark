@@ -28,6 +28,7 @@
 					<ul class="nav navbar-nav">
 						<li class="link"><a href="content_control_dashboard.php"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
 						<li class="link"><a href="content_control_approval.php" ><span class="glyphicon glyphicon-ok"></span> Approve Users</a></li>
+						<li class="link"><a href="content_control_users.php" ><span class="glyphicon glyphicon-user"></span> Users</a></li>
 						<li class="link"><a href="../content_control_login.php" ><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 					</ul>
 				</div>
@@ -59,7 +60,7 @@
 								
 							</div>
 							<div>
-								<table class="table">
+								<table class="table" id="pendingTable">
 									<thead class="text-center">
 										<tr>
 											<th>Pending for Approval</th>
@@ -71,9 +72,6 @@
 											<th>Approve</th>
 										</tr>
 									</thead>
-									<tbody id="pendingTable">
-										
-									</tbody>
 								</table>
 							</div>
 						</div>
@@ -90,4 +88,5 @@
 	<!--JQuery scripts-->
 	<script src="../js/stt.js"></script>
 	<script src="../js/generatePendingTable.js"></script>
+	<script src="protected/js/approval.js"></script>
 </html>
