@@ -18,6 +18,7 @@
 		$_SESSION['s1_d1_rel'] = $_POST['s1_d1_rel'];
 		$_SESSION['s1_d1_address'] = $_POST['s1_d1_address'];
 		$_SESSION['s1_d1_tel'] = $_POST['s1_d1_tel'];
+		$_SESSOPM['s1_vehicle_type'] = $_POST['s1_vehicle_type'];
 		header("location: ../application_s2.php");
 	}else{
 		header("location: ../application_s1.php");

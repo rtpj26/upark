@@ -27,8 +27,6 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="link"><a href="content_control_dashboard.php"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-						<li class="link"><a href="content_control_updates.php" ><span class="glyphicon glyphicon-pushpin"></span> Updates and News</a></li>
-						<li class="link"><a href="content_control_set_feature.php" ><span class="glyphicon glyphicon-duplicate"></span> Featured Articles</a></li>
 						<li class="link"><a href="content_control_approval.php" ><span class="glyphicon glyphicon-ok"></span> Approve Users</a></li>
 						<li class="link"><a href="../content_control_login.php" ><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
 					</ul>

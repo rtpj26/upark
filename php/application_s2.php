@@ -44,7 +44,7 @@
 			<ul class="page-content">
 				<li>
 					<div class="whitebg text-center">
-						<strong style="font-size: 200%;margin-top:20px; margin-bottom:20px;">CAR APPLICATION FORM</strong>
+						<strong style="font-size: 200%;margin-top:20px; margin-bottom:20px;">VEHICLE APPLICATION FORM</strong>
 						<form role="form" method="post" action="protected/application_s2_proc.php" id="application_form2">
 						<div class="row" style="margin-bottom:20px;">
 							<div class="col-md-3"></div>

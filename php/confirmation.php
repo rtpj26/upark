@@ -44,11 +44,11 @@
 			<ul class="page-content">
 				<li>
 					<div class="whitebg text-center">
-						<div class="text-center">
-							<img src="../img/accept.png" />
+						<div class="text-center padding50">
+							<img src="../img/accept.png" width="200px" height="200px" />
 						</div>
-						<div class="whitebg">
-							New User Successfully Added
+						<div class="whitebg padding30">
+							<h3>New User Successfully Added</h3>
 						</div>
 					</div>
 				</li>

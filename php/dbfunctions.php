@@ -54,13 +54,14 @@
 			return $id;
 		}	
 
-		public function linkStatusApplicantUD($aid, $vid){
+		public function linkApplicantCar($aid, $vid){
 			$pdo_1 = self::$pdo->prepare("INSERT INTO `tbl_applicant_car_link` VALUES(NULL, :AID, :VID)");
 			$pdo_1->execute(array(':AID' => $aid, ':VID' => $vid));
 			$id = self::$pdo->lastInsertId('ACL_ID');
 			return $id;
 		}
 			
+
 		public function linkStatusApplicantUD($aid, $uid, $sid){
 			$pdo_1 = self::$pdo->prepare("INSERT INTO `tbl_applicant_details_status_link` VALUES(NULL, :AID, :UID, :SID, 3)");
 			$pdo_1->execute(array(':AID' => $aid, ':UID' => $uid, ':SID' => $sid));

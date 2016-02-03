@@ -49,10 +49,10 @@
 						<div class="row">
 							<div class="col-md-3"></div>
 							<div class="col-md-3">
-								<input type="radio" id="s1_vehicle_type" name="l1_content_1" value="1" /> Car <br>
+								<input type="radio" id="s1_vehicle_type" name="s1_vehicle_type" value="1" /> Car <br>
 							</div>
 							<div class="col-md-3">
-								<input type="radio" id="s1_vehicle_type" name="l1_content_1" value="2" /> Motor <br>
+								<input type="radio" id="s1_vehicle_type" name="s1_vehicle_type" value="2" /> Motor <br>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
