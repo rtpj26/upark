@@ -72,7 +72,7 @@
 		public function getPendingApplicants(){
 			$pdo_1 = self::$pdo->prepare("SELECT ADS.ADS_ID, A.APPLICANT_FNAME, S.STATUS_DESCRIPTION 
 										FROM `tbl_applicant` A, `tbl_status` S, `tbl_applicant_details_status_link` ADS  
-										WHERE ADS.APPLICANT_ID = A.APPLICANT_ID and ADS.STATUS_ID = 3");
+										WHERE ADS.APPLICANT_ID = A.APPLICANT_ID and ADS.STATUS_ID = S.STATUS_ID and S.STATUS_ID = 3");
 			$pdo_1->execute();
 			$resultCount = 0;
 			while($row = $pdo_1->fetch(PDO::FETCH_ASSOC)){

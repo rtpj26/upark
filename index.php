@@ -28,7 +28,7 @@
 						<li class="link"><a href="php/admin.php">ADMIN</a></li>
 						<li class="link"><a href="php/news.php">NEWS</a></li>
 						<li class="link"><a href="php/contact.php">CONTACT</a></li>
-						<li class="link"><a href="application_RN.php">APPLICATION</a></li>
+						<li class="link"><a href="php/application_RN.php">APPLICATION</a></li>
 						<li class="center_vertical" style="font-size: 75%; float: right; color: white;">
 							<div>
 								Already a user? <a href="php/enter_sticker.php" style="color: #009e3d">Sign in</a> here
