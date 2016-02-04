@@ -70,12 +70,28 @@
 		}
 
 		public function getPendingApplicants(){
-			//$pdo_1 = self::$pdo->prepare("SELECT * FROM `tbl_applicant_details_status_link` WHERE STATUS_ID = 3");
-			$pdo_1 = self::$pdo->prepare("SELECT tbl_applicant.APPLICANT_ID As ID, tbl_applicant.APPLICANT_FNAME AS FNAME FROM `tbl_applicant` LEFT JOIN tbl_applicant_details_status_link on tbl_applicant.APPLICANT_ID = tbl_applicant_details_status_link.APPLICANT_ID WHERE tbl_applicant_details_status_link.STATUS_ID = 3 or tbl_applicant_details_status_link.STATUS_ID = 4");
+			$pdo_1 = self::$pdo->prepare("SELECT ADS.ADS_ID, A.APPLICANT_FNAME, S.STATUS_DESCRIPTION 
+										FROM `tbl_applicant` A, `tbl_status` S, `tbl_applicant_details_status_link` ADS  
+										WHERE ADS.APPLICANT_ID = A.APPLICANT_ID and S.STATUS_ID = 3");
 			$pdo_1->execute();
 			$result = $pdo_1->fetch(PDO::FETCH_ASSOC);
-			if($result)	echo json_encode($result);
-			else return 0;
+			if($result)	{
+				while($row = $pdo_1->fetch(PDO::FETCH_ASSOC)){
+					echo '<tbody><tr><td>' . $row['ADS_ID'] . '</td>
+								<td>' . $row['APPLICANT_FNAME'] . '</td>
+								<td>' . $row['STATUS_DESCRIPTION'] . '</td>
+								<td><button class="btn btn-default"> Approve </button> </tr></tbody>';
+				}
+
+			}
+		}
+
+		public function getActiveUserCount(){
+			$pdo_1 = self::$pdo->prepare("SELECT COUNT(ADS_ID) As activeCount FROM `tbl_applicant_details_status_link` WHERE STATUS_ID = 1");
+			$pdo_1->execute();
+			$result = $pdo_1->fetch(PDO::FETCH_ASSOC);
+			if($result)	echo $result['activeCount'];
+			else echo 0;
 		}
 
 
