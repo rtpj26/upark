@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
+	include "dbfunctions.php";
 	session_start();
-	if($_SESSION['SESSION_ID'] < 0) header('location: ../content_control_login.php');
+	if($_SESSION['SESSION_ID'] < 0 || !isset($_SESSION['SESSION_ID'])) header('location: ../content_control_login.php');
 ?>
 <html>
 	<head>
@@ -41,7 +42,7 @@
 					<div class="whitebg text-center">
 						<div class="row">
 							<div class="col-md-4" style="padding: 20px; background-color: #ebebeb; margin-right: 1px; margin-left:-2px;">
-								<span class="glyphicon glyphicon-dashboard"></span> Number of Users: <div id="numUsers"></div>
+								<span class="glyphicon glyphicon-dashboard"></span> Number of Users: <?php dbhelper::getActiveUserCount() ?>
 							</div>
 							<div class="col-md-4"  style="padding: 20px; background-color: #ebebeb; margin-right: 1px;">
 								<span class="glyphicon glyphicon-screenshot"></span> Number of Occupied Space: <div id="occupiedSpace"></div>

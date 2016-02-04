@@ -2,7 +2,7 @@
 <?php
 	include "dbfunctions.php";
 	session_start();
-	if($_SESSION['SESSION_ID'] < 0) header('location: ../content_control_login.php');
+	if($_SESSION['SESSION_ID'] < 0 || !isset($_SESSION['SESSION_ID'])) header('location: ../content_control_login.php');
 ?>
 <html>
 	<head>
@@ -72,8 +72,10 @@
 											<th>Status</th>
 											<th>Approve</th>
 										</tr>
-										<?php dbhelper::getPendingApplicants();?>
 									</thead>
+									<tbody>
+										<?php dbhelper::getPendingApplicants();?>
+									</tbody>
 								</table>
 							</div>
 						</div>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <?php
-	session_start();
-	if($_SESSION['SESSION_ID'] < 0) header('location: ../content_control_login.php');
 	include "dbfunctions.php";
+	session_start();
+	if($_SESSION['SESSION_ID'] < 0 || !isset($_SESSION['SESSION_ID'])) header('location: ../content_control_login.php');
+	
 ?>
 <html>
 	<head>
@@ -44,22 +45,12 @@
 					</div>
 					<div class="whitebg" style="padding: 20px;">
 						<table class="table">
-							<?php
-								$res = dbhelper::returnAllUsers();
-								var_dump($res);
-								echo "<thead>
-										<th>User</th>
-										<th colspan=\"2\">Actions </th>
-									  </thead>";
-								foreach($res as $row){
-									echo "<tr>
-											<td>".$res->LOGIN_OWNER."</td>
-											<td><button class=\"btn btn-primary\" value=\"".$res->LOGIN_ID."\"><span class=\"glyphicon glyphicon-pencil\"></span> Edit</td>
-											<td><button class=\"btn btn-primary\" value=\"".$res->LOGIN_ID."\"><span class=\"glyphicon glyphicon-ok\"></span> Delete</td>
-										  </tr>";
-									}
-								
-							?>
+							<thead>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Actions</th>
+							</thead>
+							<?php dbhelper::returnAllUsers();?>
 						</table>
 					</div>
 				</li>
