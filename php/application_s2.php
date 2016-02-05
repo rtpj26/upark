@@ -167,4 +167,5 @@
 	
 	<!--JQuery scripts-->
 	<script src="../js/stt.js"></script>
+	<script src="../js/maskFields.js"></script>
 </html>

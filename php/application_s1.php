@@ -65,24 +65,32 @@
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
-							<div class="col-md-3">
-								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_address" name="s1_owner_address" placeholder="ADDRESS CITY" required/>
+							<div class="col-md-6">
+								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_address" name="s1_owner_address" placeholder="CURRENT ADDRESS" required/>
 							</div>
-							<div class="col-md-3">
-								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_tel1" name="s1_owner_tel1" placeholder="TEL NO." required/>
-							</div>
+							<!--<div class="col-md-3">
+							<input type="hidden" class="form-control input-sm text-center s1Misc1" id="s1_owner_tel1" name="s1_owner_tel1" placeholder="TEL NO."/>
+							<!--</div>-->
 							<div class="col-md-3"></div>
 						</div>
 						<div class="row">
 							<div class="col-md-3"></div>
-							<div class="col-md-3">
-								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_province" name="s1_owner_province" placeholder="PROVINCE" required/>
+							<div class="col-md-6">
+								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_province" name="s1_owner_province" placeholder="ADDRESS1 / ADDRESS2" />
 							</div>
-							<div class="col-md-3">
-								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_tel2" name="s1_owner_tel2" placeholder="TEL NO." required/>
+							<!--<div class="col-md-3">-->
+								<input type="hidden"class="form-control input-sm text-center s1Misc1" id="s1_owner_tel2" name="s1_owner_tel2" placeholder="TEL NO." required/>
+							<!--</div>-->
+							<div class="col-md-3"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3"></div>
+							<div class="col-md-6">
+								<input class="form-control input-sm text-center s1Misc1" id="s1_owner_tel1" name="s1_owner_tel1" placeholder="TEL NO." required/>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
+
 						<strong class="applicationLabel">DESCRIPTION OF VEHICLE</strong>
 						<div class="row">
 							<div class="col-md-3"></div>
@@ -155,4 +163,6 @@
 	
 	<!--JQuery scripts-->
 	<script src="../js/stt.js"></script>
+	<script src="../js/jquery.maskedinput.js"></script>
+	<script src="../js/maskFields.js"></script>
 </html>
