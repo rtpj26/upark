@@ -10,6 +10,10 @@
 		if($action == "getPendingUser"){
 			return dbhelper::getPendingApplicants();
 		}
+
+		if($action == "getActiveUser"){
+			return dbhelper::returnAllUsers();
+		}
 	}
 
 	if($method == "POST"){
@@ -17,10 +21,12 @@
 
 		if($action == "updatePendingUser"){
 			$ADS_ID = $_POST['ADS_ID'];
-			echo $ADS_ID;
 			return dbhelper::approveUser($ADS_ID);
 		}
+	
+		if($action == "deletePendingUser"){
+			$ADS_ID = $_POST['ADS_ID'];
+			return dbhelper::deleteUser($ADS_ID);
+		}
 	}
-
-
 ?>

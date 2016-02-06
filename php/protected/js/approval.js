@@ -40,4 +40,22 @@ $(document).ready(function(){
 		});
 	});
 
+
+	pendingTable.delegate('.delete', "click", function(){
+		console.log("delete clicked");
+		var ads_id = $(this).attr('data-id');
+		console.log(ads_id);
+		$.ajax({
+			type: 'POST',
+			url: 'protected/ajax_service.php',
+			data:{
+				action: 'deletePendingUser',
+				ADS_ID: ads_id,
+			},
+			success: function(data){
+				console.log("user status updated");
+			}
+		});
+	});
+
 });

@@ -44,13 +44,12 @@
 						<button id="aPost" class="btn btn btn-primary" style="margin-right: 5px;"><span class="glyphicon glyphicon-user"></span> Add New User </button>
 					</div>
 					<div class="whitebg" style="padding: 20px;">
-						<table class="table">
+						<table class="table" id="userTable">
 							<thead>
 									<th>ID</th>
 									<th>Name</th>
-									<th>Actions</th>
+									<th colspan="2">Actions</th>
 							</thead>
-							<?php dbhelper::returnAllUsers();?>
 						</table>
 					</div>
 				</li>
@@ -65,4 +64,5 @@
 	
 	<!--JQuery scripts-->
 	<script src="../js/stt.js"></script>
+	<script src="protected/js/user.js"></script>
 </html>

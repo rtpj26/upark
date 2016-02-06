@@ -83,22 +83,19 @@
 										FROM `tbl_applicant` A, `tbl_applicant_details_status_link` ADS  
 										WHERE ADS.APPLICANT_ID = A.APPLICANT_ID and ADS.STATUS_ID = 1");
 			$pdo_1->execute();
-			$resultCount = 0;
-			while($row = $pdo_1->fetch(PDO::FETCH_ASSOC)){
-				echo '<tr><td>' . $row['ADS_ID'] . '</td>
-							<td>' . $row['APPLICANT_FNAME'] . '</td>
-							<td><button class="btn btn-default"> Edit </button> </td>
-							<td><button class="btn btn-default"> Remove </button> </td></tr>';
-				$resultCount++;
-			}
-			if($resultCount == 0){
-				echo '<tbody><td colspan="4" class="text-center"><em>No Active Users</em></td></tbody>';
-			}
-		
+			$result = $pdo_1->fetchAll();
+			echo json_encode($result);
 		}
 
 		public function approveUser($ADS_ID){
 			$pdo_1 = self::$pdo->prepare("UPDATE `tbl_applicant_details_status_link` SET STATUS_ID = 1 WHERE ADS_ID = :ADS_ID");
+			$pdo_1->execute(array(':ADS_ID'=>$ADS_ID));
+			$result = $pdo_1->fetch();
+			if($result) echo "OK";
+		}
+
+		public function deleteUser($ADS_ID){
+			$pdo_1 = self::$pdo->prepare("UPDATE `tbl_applicant_details_status_link` SET STATUS_ID = 2 WHERE ADS_ID = :ADS_ID");
 			$pdo_1->execute(array(':ADS_ID'=>$ADS_ID));
 			$result = $pdo_1->fetch();
 			if($result) echo "OK";
