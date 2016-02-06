@@ -74,18 +74,8 @@
 										FROM `tbl_applicant` A, `tbl_status` S, `tbl_applicant_details_status_link` ADS  
 										WHERE ADS.APPLICANT_ID = A.APPLICANT_ID and ADS.STATUS_ID = S.STATUS_ID and S.STATUS_ID = 3");
 			$pdo_1->execute();
-			$resultCount = 0;
-			while($row = $pdo_1->fetch(PDO::FETCH_ASSOC)){
-				echo '<tbody><tr><td>' . $row['ADS_ID'] . '</td>
-							<td>' . $row['APPLICANT_FNAME'] . '</td>
-							<td>' . $row['STATUS_DESCRIPTION'] . '</td>
-							<td><button class="btn btn-default"> Approve </button> </tr></tbody>';
-				$resultCount++;
-			}
-			if($resultCount == 0){
-				echo '<tbody><td colspan="4" class="text-center"><em>No Pending Users</em></td></tbody>';
-			}
-
+			$result = $pdo_1->fetchAll();
+			echo json_encode($result);
 		}
 
 		public function returnAllUsers(){
@@ -106,6 +96,14 @@
 			}
 		
 		}
+
+		public function approveUser($ADS_ID){
+			$pdo_1 = self::$pdo->prepare("UPDATE `tbl_applicant_details_status_link` SET STATUS_ID = 1 WHERE ADS_ID = :ADS_ID");
+			$pdo_1->execute(array(':ADS_ID'=>$ADS_ID));
+			$result = $pdo_1->fetch();
+			if($result) echo "OK";
+		}
+
 
 		public function getActiveUserCount(){
 			$pdo_1 = self::$pdo->prepare("SELECT COUNT(ADS_ID) As activeCount FROM `tbl_applicant_details_status_link` WHERE STATUS_ID = 1");

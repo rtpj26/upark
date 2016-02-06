@@ -71,11 +71,12 @@
 											<th>Name</th>
 											<th>Status</th>
 											<th>Approve</th>
+											<th>Delete</th>
 										</tr>
 									</thead>
-									<tbody>
+									<!--<tbody>
 										<?php dbhelper::getPendingApplicants();?>
-									</tbody>
+									</tbody>-->
 								</table>
 							</div>
 						</div>
@@ -91,6 +92,5 @@
 	
 	<!--JQuery scripts-->
 	<script src="../js/stt.js"></script>
-	<script src="../js/generatePendingTable.js"></script>
 	<script src="protected/js/approval.js"></script>
 </html>
