@@ -1,21 +1,22 @@
 $(document).ready(function(){
+	var ajaxService = 'protected/ajax_service.php';
 	var pendingTable = $('#pendingTable');
 	var approval = $('.approval');
 
 	$.ajax({
 		type: 'GET',
-		url: 'protected/ajax_service.php',
+		url: ajaxService,
 		data:{
 			action: 'getPendingUser',			
 		},
 		success: function(data){
 			$.each(data, function(i, dataSet){
 				pendingTable.append("<tbody>");
-				pendingTable.append("<td>" + dataSet.ADS_ID  + "</td>" + 
+				pendingTable.append("<tr><td>" + dataSet.ADS_ID  + "</td>" + 
 					"<td>" + dataSet.APPLICANT_FNAME + "</td>" + 
 					"<td>" + dataSet.STATUS_DESCRIPTION + "</td>" + 
 					"<td><button data-id='" + dataSet.ADS_ID + "' class='btn btn-default approval'>Approve</button></td>" +
-					"<td><button data-id='" + dataSet.ADS_ID + "' class='btn btn-default delete'>Delete</button></td>");
+					"<td><button data-id='" + dataSet.ADS_ID + "' class='btn btn-default delete'>Delete</button></td></tr>");
 				pendingTable.append("</tbody>");
 			});
 		}

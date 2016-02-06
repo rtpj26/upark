@@ -40,11 +40,28 @@
 			<div>
 			<ul class="page-content">
 				<li>
-					<div class="whitebg" style="padding: 20px;">
+					<div class="whitebg text-center">
+						<div class="row">
+							<div class="col-md-4" style="padding: 20px; background-color: #ebebeb; margin-right: 1px; margin-left:-2px;">
+								<span class="glyphicon glyphicon-dashboard"></span> Number of Users: <?php dbhelper::getActiveUserCount() ?>
+							</div>
+							<div class="col-md-4"  style="padding: 20px; background-color: #ebebeb; margin-right: 1px;">
+								<span class="glyphicon glyphicon-screenshot"></span> Number of Occupied Space: <div id="occupiedSpace"></div>
+							</div>
+							<div class="col-md-4"  style="padding: 20px; background-color: #ebebeb;">
+								<span class="glyphicon glyphicon-circle-arrow-down"></span> Number of Available Space: <div id="availableSpace"></div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="row userTopButtonAdjustment">
 						<button id="aPost" class="btn btn btn-primary" style="margin-right: 5px;"><span class="glyphicon glyphicon-user"></span> Add New User </button>
+						<button id="aPost" class="btn btn btn-primary" style="margin-right: 5px;"><span class="glyphicon glyphicon-duplicate"></span> Print PDF </button>
+						
 					</div>
 					<div class="whitebg" style="padding: 20px;">
-						<table class="table" id="userTable">
+						<table class="table table-striped" id="userTable">
 							<thead>
 									<th>ID</th>
 									<th>Name</th>

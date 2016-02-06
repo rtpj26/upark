@@ -61,7 +61,7 @@
 								
 							</div>
 							<div>
-								<table class="table" id="pendingTable">
+								<table class="table table-striped" id="pendingTable">
 									<thead class="text-center">
 										<tr>
 											<th>Pending for Approval</th>

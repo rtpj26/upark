@@ -24,7 +24,7 @@
 			return dbhelper::approveUser($ADS_ID);
 		}
 	
-		if($action == "deletePendingUser"){
+		if($action == "deletePendingUser" || $action == "deleteActiveUser"){
 			$ADS_ID = $_POST['ADS_ID'];
 			return dbhelper::deleteUser($ADS_ID);
 		}
